@@ -502,11 +502,11 @@ ul li {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 2px;
-  background-color: #00aeef;
+  background-color: #065602;
   -webkit-transition: all 500ms;
   -o-transition: all 500ms;
   transition: all 500ms;
-  border: 2px solid #00aeef;
+  border: 2px solid #065602;
 }
 
 @media only screen and (max-width: 767px) {
@@ -567,7 +567,7 @@ ul li {
   top: 0;
   width: 100%;
   position: fixed;
-  background-color: #ffffff;
+  background-color: #e9fff5;
   box-shadow: 0 3px 50px rgba(0, 0, 0, 0.2);
   border-bottom: none;
   left: 0;
@@ -621,7 +621,8 @@ ul li {
 }
 
 .classy-nav-container {
-  background-color: transparent;
+  background-color: #e9fff5;
+  ;
 }
 
 .classy-nav-container .classy-navbar {

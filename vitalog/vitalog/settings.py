@@ -27,7 +27,10 @@ SECRET_KEY = 'django-insecure-1kw468+jo^aydpi6%+4h-csn*kh_hgnt9q5v@*kqc!u$#bu09_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gozygreg-vitalog-wrafadht5th.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-gozygreg-vitalog-wrafadht5th.ws-eu108.gitpod.io']
+
 
 
 # Application definition
@@ -129,3 +132,20 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+"""
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'community.vitalog@gmail.com'
+EMAIL_HOST_PASSWORD = !!vitalog!!
+EMIAL_USE_TLS = True
+EMAIL_USE_SSL = False
+"""
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMIAL_USE_TLS = True
